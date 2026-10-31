@@ -1,0 +1,39 @@
+{
+  "config": {
+    "name": "full_lr3e-05_bs16",
+    "freeze_encoder": false,
+    "learning_rate": 3e-05,
+    "batch_size": 16,
+    "max_epochs": 2,
+    "patience": 2,
+    "weight_decay": 0.01,
+    "warmup_ratio": 0.1,
+    "max_grad_norm": 1.0
+  },
+  "fingerprint": "d62a13c63373c833",
+  "max_length": 384,
+  "parameters": {
+    "entrenables": 109267209,
+    "totales": 109267209
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 1.0866621419130802,
+      "val_loss": 0.5963946825904757,
+      "val_f1": 0.0,
+      "train_seconds": 2.4535063750008703
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.4099654948886211,
+      "val_loss": 0.4243294254419239,
+      "val_f1": 0.14285714285714288,
+      "train_seconds": 2.429580125004577
+    }
+  ],
+  "best_epoch": 2,
+  "best_val_f1": 0.14285714285714288,
+  "train_seconds": 4.883086500005447,
+  "total_seconds": 5.596143000002485
+}

@@ -1,0 +1,81 @@
+{
+  "config": {
+    "name": "full_lr2e-05_bs32",
+    "freeze_encoder": false,
+    "learning_rate": 2e-05,
+    "batch_size": 32,
+    "max_epochs": 8,
+    "patience": 3,
+    "weight_decay": 0.01,
+    "warmup_ratio": 0.1,
+    "max_grad_norm": 1.0
+  },
+  "fingerprint": "a490aa20e11b820e",
+  "max_length": 384,
+  "parameters": {
+    "entrenables": 109267209,
+    "totales": 109267209
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.46737779040787114,
+      "val_loss": 0.09818806959017642,
+      "val_f1": 0.7988405797101449,
+      "train_seconds": 89.69021270899975
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.04973306766382774,
+      "val_loss": 0.07988780144764451,
+      "val_f1": 0.8470451911935111,
+      "train_seconds": 92.69780400000309
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.030375378965079396,
+      "val_loss": 0.08079368531688252,
+      "val_f1": 0.8651529193697869,
+      "train_seconds": 89.74771124999825
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.02058185475253134,
+      "val_loss": 0.08229695524757592,
+      "val_f1": 0.8664831383344803,
+      "train_seconds": 91.51403541599575
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.01501520217783623,
+      "val_loss": 0.08985893981579444,
+      "val_f1": 0.8699561909153792,
+      "train_seconds": 90.37089441699936
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.011217570494341,
+      "val_loss": 0.09441082309811501,
+      "val_f1": 0.8629791140693137,
+      "train_seconds": 88.91438795800059
+    },
+    {
+      "epoch": 7,
+      "train_loss": 0.008877186115623714,
+      "val_loss": 0.1013455966826212,
+      "val_f1": 0.861372504016525,
+      "train_seconds": 91.6387091659999
+    },
+    {
+      "epoch": 8,
+      "train_loss": 0.007160390571748964,
+      "val_loss": 0.10162201117126352,
+      "val_f1": 0.8633027522935781,
+      "train_seconds": 91.16375179199531
+    }
+  ],
+  "best_epoch": 5,
+  "best_val_f1": 0.8699561909153792,
+  "train_seconds": 725.737506707992,
+  "total_seconds": 773.9843677080062
+}

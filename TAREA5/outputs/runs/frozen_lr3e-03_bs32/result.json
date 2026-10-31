@@ -1,0 +1,95 @@
+{
+  "config": {
+    "name": "frozen_lr3e-03_bs32",
+    "freeze_encoder": true,
+    "learning_rate": 0.003,
+    "batch_size": 32,
+    "max_epochs": 20,
+    "patience": 4,
+    "weight_decay": 0.01,
+    "warmup_ratio": 0.1,
+    "max_grad_norm": 1.0
+  },
+  "fingerprint": "a490aa20e11b820e",
+  "max_length": 384,
+  "parameters": {
+    "entrenables": 6921,
+    "totales": 109267209
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.5918866277775536,
+      "val_loss": 0.15388474108008365,
+      "val_f1": 0.7072072072072072,
+      "train_seconds": 49.1070861670014
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.10669214616013291,
+      "val_loss": 0.11814260810041778,
+      "val_f1": 0.7578088578088579,
+      "train_seconds": 47.39874266699917
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.08956347724471143,
+      "val_loss": 0.10775053387096116,
+      "val_f1": 0.7674526121128064,
+      "train_seconds": 26.719906834005087
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.0833274716342333,
+      "val_loss": 0.10869567246348708,
+      "val_f1": 0.7679315131883389,
+      "train_seconds": 25.758095000004687
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.08006244170183602,
+      "val_loss": 0.10577430560367787,
+      "val_f1": 0.7683419988445985,
+      "train_seconds": 26.429730457995902
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.07912801457598526,
+      "val_loss": 0.1057687745225671,
+      "val_f1": 0.7727906976744184,
+      "train_seconds": 25.552988750001532
+    },
+    {
+      "epoch": 7,
+      "train_loss": 0.07726781092915912,
+      "val_loss": 0.1055013129214412,
+      "val_f1": 0.7712418300653594,
+      "train_seconds": 43.15679820800142
+    },
+    {
+      "epoch": 8,
+      "train_loss": 0.07636858999930402,
+      "val_loss": 0.10392248625166944,
+      "val_f1": 0.7710926694329184,
+      "train_seconds": 42.62578829199629
+    },
+    {
+      "epoch": 9,
+      "train_loss": 0.07518759070322903,
+      "val_loss": 0.10738930954237964,
+      "val_f1": 0.7667479391617323,
+      "train_seconds": 42.38206433400046
+    },
+    {
+      "epoch": 10,
+      "train_loss": 0.07488358615540557,
+      "val_loss": 0.11092332573920274,
+      "val_f1": 0.7706018518518519,
+      "train_seconds": 45.159977707997314
+    }
+  ],
+  "best_epoch": 6,
+  "best_val_f1": 0.7727906976744184,
+  "train_seconds": 374.29117841800326,
+  "total_seconds": 457.5164021669989
+}

@@ -1,0 +1,100 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish,provide=*]{babel}
+\usepackage{lmodern}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{listings}
+\usepackage{hyperref}
+\usepackage{microtype}
+
+\geometry{margin=2.4cm}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.65em}
+\setlist[itemize]{label=\textbullet,topsep=0.25em,itemsep=0.1em,parsep=0pt}
+\hypersetup{colorlinks=true,urlcolor=blue,linkcolor=blue}
+
+\definecolor{codebg}{RGB}{243,246,250}
+\definecolor{codeframe}{RGB}{202,214,228}
+\definecolor{codestring}{RGB}{0,120,94}
+\lstdefinestyle{ejemplo}{
+    basicstyle=\ttfamily\small,
+    backgroundcolor=\color{codebg},
+    frame=single,
+    rulecolor=\color{codeframe},
+    framerule=0.5pt,
+    framesep=5pt,
+    showstringspaces=false,
+    stringstyle=\color{codestring},
+    columns=fullflexible,
+    keepspaces=true,
+    breaklines=true
+}
+
+\begin{document}
+
+\section*{Reglas de codificación}
+
+Use Jupyter Notebooks con Python. El notebook debe ejecutarse completamente y conservar sus resultados. Puede utilizar \texttt{numpy}, \texttt{pandas}, PyTorch, Hugging Face \texttt{transformers}, \texttt{kagglehub}, \texttt{seqeval}, \texttt{scikit-learn} y librerías de visualización.
+
+Entregue:
+\begin{itemize}
+    \item \texttt{ner\_conll2002.ipynb}: implementación completa, ejecutada y con todas las salidas solicitadas.
+    \item Un reporte de máximo cuatro páginas con las tablas, figuras y análisis solicitados.
+\end{itemize}
+
+\section*{Reconocimiento de entidades nombradas en español}
+
+El reconocimiento de entidades nombradas (\textit{named entity recognition}, NER) identifica los fragmentos de un texto que corresponden a entidades y determina su tipo. En esta tarea se reconocerán cuatro clases:
+\begin{itemize}
+    \item \texttt{PER}: personas;
+    \item \texttt{ORG}: organizaciones;
+    \item \texttt{LOC}: localizaciones;
+    \item \texttt{MISC}: nombres propios que no pertenecen a las clases anteriores.
+\end{itemize}
+
+Use la partición en español de \href{https://www.clips.uantwerpen.be/conll2002/ner/}{\textit{CoNLL Corpora}}. Descargue el conjunto mediante \texttt{kagglehub} y trabaje exclusivamente con los archivos \texttt{esp.train}, \texttt{esp.testa} y \texttt{esp.testb} ubicados en la carpeta \texttt{conll2002}. Estos corresponden respectivamente a entrenamiento, validación y prueba.
+
+Las entidades se representan mediante \textit{Beginning, Inside, Outside} (BIO). La etiqueta \texttt{B-TIPO} marca la primera palabra de una entidad, \texttt{I-TIPO} marca sus palabras posteriores y \texttt{O} indica que una palabra no pertenece a ninguna entidad. Por ejemplo:
+
+\begin{lstlisting}[style=ejemplo]
+tokens = ["Pedro", "trabaja", "en", "Banco", "de", "Bogota", "."]
+tags   = ["B-PER", "O", "O", "B-ORG", "I-ORG", "I-ORG", "O"]
+\end{lstlisting}
+
+Para esta tarea usaremos \href{https://huggingface.co/dccuchile/bert-base-spanish-wwm-cased}{\texttt{dccuchile/bert-base-spanish-wwm-cased}} (BETO), un modelo BERT preentrenado con un corpus amplio en español. Compararemos el entrenamiento de una cabeza de clasificación con el encoder congelado y el \textit{fine-tuning} completo del modelo.
+
+\section*{[10p] 1. Preparación y exploración del corpus}
+
+\textbf{[4p] Lectura y validación.} Reconstruya cada oración y sus etiquetas. Verifique que ambas secuencias tengan la misma longitud y reporte el número de oraciones, palabras y entidades completas por partición.
+
+\textbf{[6p] Exploración.} Reporte la distribución de etiquetas BIO y el número de entidades de cada tipo. Incluya la distribución de la longitud de las oraciones y muestre cuatro ejemplos anotados, uno por tipo de entidad.
+
+\section*{[20p] 2. Alineación de etiquetas}
+
+Tokenice las oraciones con el tokenizer de BETO. Limite o trunque las secuencias a una longitud máxima apropiada y justifique su elección.
+
+\textbf{[12p] Alineación.} Implemente una función que use \texttt{word\_ids()} para alinear las etiquetas originales con los subtokens. Etiquete solo el primer subtoken de cada palabra y asigne \texttt{-100} a los tokens especiales, al \textit{padding} y a los subtokens posteriores. Verifique la alineación después del truncamiento. ¿Por qué se asigna \texttt{-100} a estas posiciones y qué ocurriría si se incluyeran en el cálculo de la pérdida?
+
+\textbf{[8p] Análisis de la tokenización.} Presente una tabla con al menos cinco palabras divididas en varios subtokens. Incluya la palabra, sus subtokens y sus etiquetas alineadas.
+
+\section*{[40p] 3. Clasificación por token con BETO}
+
+Construya dos modelos a partir de \texttt{AutoModelForTokenClassification}. Ambos deben usar el mismo checkpoint inicial, vocabulario de etiquetas, datos tokenizados y criterio de pérdida.
+
+\textbf{[16p] Encoder congelado.} Congele todos los parámetros de BETO y entrene únicamente la cabeza de clasificación por token. Reporte el número de parámetros entrenables, las curvas de pérdida y F1 de validación y el tiempo de entrenamiento.
+
+\textbf{[24p] Fine-tuning completo.} Entrene BETO y la cabeza de clasificación conjuntamente. Reporte las mismas cantidades del modelo congelado.
+
+\section*{[30p] 4. Evaluación final}
+
+Evalúe sobre prueba una sola vez la mejor configuración del encoder congelado y la mejor configuración con \textit{fine-tuning}.
+
+\textbf{[15p] Métricas.} Use \texttt{seqeval} para reportar precision, recall y F1 de entidades completas con promedio micro global, con promedio macro entre tipos y por separado para PER, ORG, LOC y MISC. Reporte también la exactitud por token sin \textit{padding}. Una entidad es correcta solo si coinciden sus límites y su tipo.
+
+\textbf{[15p] Comparación.} Presente una tabla que incluya, para los dos modelos, el F1 de validación y prueba, el número de parámetros entrenables y el tiempo de entrenamiento. Compare ambos modelos en términos de desempeño y costo computacional. El modelo ajustado completamente debe alcanzar un F1 micro global de prueba de al menos \textbf{0.80}.
+
+\end{document}

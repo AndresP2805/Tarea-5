@@ -1,0 +1,5 @@
+22:25:57 [frozen_lr3e-03_bs16] época 1/2 | pérdida train 0.9938 | pérdida val 0.5564 | F1 val 0.0577 * | 1s
+22:25:58 [frozen_lr3e-03_bs16] época 2/2 | pérdida train 0.3467 | pérdida val 0.4342 | F1 val 0.3136 * | 1s
+22:26:01 [full_lr3e-05_bs16] época 1/2 | pérdida train 1.0867 | pérdida val 0.5964 | F1 val 0.0000 * | 2s
+22:26:04 [full_lr3e-05_bs16] época 2/2 | pérdida train 0.4100 | pérdida val 0.4243 | F1 val 0.1429 * | 2s
+22:26:08 Evaluación final realizada sobre 'validación'.

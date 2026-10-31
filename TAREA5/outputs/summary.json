@@ -1,0 +1,344 @@
+{
+  "environment": {
+    "python": "3.12.14",
+    "plataforma": "macOS-26.6.2-arm64-arm-64bit",
+    "dispositivo": "mps",
+    "torch": "2.15.0",
+    "transformers": "5.22.1",
+    "seqeval": "1.2.2",
+    "scikit-learn": "1.9.1",
+    "modo": "completo"
+  },
+  "max_length": 384,
+  "corpus": {
+    "train": {
+      "Oraciones": 8323,
+      "Palabras": 264715,
+      "Entidades completas": 18798,
+      "I-X reparados": 1,
+      "Longitud media": 31.8
+    },
+    "validación": {
+      "Oraciones": 1915,
+      "Palabras": 52923,
+      "Entidades completas": 4352,
+      "I-X reparados": 1,
+      "Longitud media": 27.6
+    },
+    "prueba": {
+      "Oraciones": 1517,
+      "Palabras": 51533,
+      "Entidades completas": 3559,
+      "I-X reparados": 1,
+      "Longitud media": 34.0
+    }
+  },
+  "entities": {
+    "train": {
+      "PER": 4321,
+      "ORG": 7390,
+      "LOC": 4914,
+      "MISC": 2173,
+      "Total": 18798
+    },
+    "validación": {
+      "PER": 1222,
+      "ORG": 1700,
+      "LOC": 985,
+      "MISC": 445,
+      "Total": 4352
+    },
+    "prueba": {
+      "PER": 735,
+      "ORG": 1400,
+      "LOC": 1084,
+      "MISC": 340,
+      "Total": 3559
+    }
+  },
+  "grids": {
+    "A": [
+      {
+        "Corrida": "frozen_lr3e-03_bs16",
+        "LR": 0.003,
+        "Batch": 16,
+        "Épocas": 15,
+        "Mejor época": 11,
+        "F1 val": 0.7801,
+        "Entrenamiento (min)": 5.87
+      },
+      {
+        "Corrida": "frozen_lr1e-02_bs16",
+        "LR": 0.01,
+        "Batch": 16,
+        "Épocas": 20,
+        "Mejor época": 18,
+        "F1 val": 0.7771,
+        "Entrenamiento (min)": 10.8
+      },
+      {
+        "Corrida": "frozen_lr1e-03_bs16",
+        "LR": 0.001,
+        "Batch": 16,
+        "Épocas": 11,
+        "Mejor época": 7,
+        "F1 val": 0.774,
+        "Entrenamiento (min)": 4.23
+      },
+      {
+        "Corrida": "frozen_lr1e-03_bs32",
+        "LR": 0.001,
+        "Batch": 32,
+        "Épocas": 9,
+        "Mejor época": 5,
+        "F1 val": 0.773,
+        "Entrenamiento (min)": 3.71
+      },
+      {
+        "Corrida": "frozen_lr3e-03_bs32",
+        "LR": 0.003,
+        "Batch": 32,
+        "Épocas": 10,
+        "Mejor época": 6,
+        "F1 val": 0.7728,
+        "Entrenamiento (min)": 6.24
+      },
+      {
+        "Corrida": "frozen_lr1e-02_bs32",
+        "LR": 0.01,
+        "Batch": 32,
+        "Épocas": 10,
+        "Mejor época": 6,
+        "F1 val": 0.7728,
+        "Entrenamiento (min)": 4.6
+      }
+    ],
+    "B": [
+      {
+        "Corrida": "full_lr3e-05_bs32",
+        "LR": 3e-05,
+        "Batch": 32,
+        "Épocas": 6,
+        "Mejor época": 3,
+        "F1 val": 0.8771,
+        "Entrenamiento (min)": 8.86
+      },
+      {
+        "Corrida": "full_lr5e-05_bs32",
+        "LR": 5e-05,
+        "Batch": 32,
+        "Épocas": 7,
+        "Mejor época": 4,
+        "F1 val": 0.8743,
+        "Entrenamiento (min)": 10.22
+      },
+      {
+        "Corrida": "full_lr2e-05_bs32",
+        "LR": 2e-05,
+        "Batch": 32,
+        "Épocas": 8,
+        "Mejor época": 5,
+        "F1 val": 0.87,
+        "Entrenamiento (min)": 12.1
+      },
+      {
+        "Corrida": "full_lr5e-05_bs16",
+        "LR": 5e-05,
+        "Batch": 16,
+        "Épocas": 7,
+        "Mejor época": 4,
+        "F1 val": 0.8681,
+        "Entrenamiento (min)": 10.17
+      },
+      {
+        "Corrida": "full_lr2e-05_bs16",
+        "LR": 2e-05,
+        "Batch": 16,
+        "Épocas": 8,
+        "Mejor época": 5,
+        "F1 val": 0.8677,
+        "Entrenamiento (min)": 11.85
+      },
+      {
+        "Corrida": "full_lr3e-05_bs16",
+        "LR": 3e-05,
+        "Batch": 16,
+        "Épocas": 7,
+        "Mejor época": 4,
+        "F1 val": 0.8633,
+        "Entrenamiento (min)": 10.16
+      }
+    ]
+  },
+  "selected": {
+    "A": {
+      "config": {
+        "name": "frozen_lr3e-03_bs16",
+        "freeze_encoder": true,
+        "learning_rate": 0.003,
+        "batch_size": 16,
+        "max_epochs": 20,
+        "patience": 4,
+        "weight_decay": 0.01,
+        "warmup_ratio": 0.1,
+        "max_grad_norm": 1.0
+      },
+      "parameters": {
+        "entrenables": 6921,
+        "totales": 109267209
+      },
+      "best_epoch": 11,
+      "best_val_f1": 0.7801173627890923,
+      "train_seconds": 352.2946201260056,
+      "total_seconds": 434.8985416670039,
+      "epochs_run": 15
+    },
+    "B": {
+      "config": {
+        "name": "full_lr3e-05_bs32",
+        "freeze_encoder": false,
+        "learning_rate": 3e-05,
+        "batch_size": 32,
+        "max_epochs": 8,
+        "patience": 3,
+        "weight_decay": 0.01,
+        "warmup_ratio": 0.1,
+        "max_grad_norm": 1.0
+      },
+      "parameters": {
+        "entrenables": 109267209,
+        "totales": 109267209
+      },
+      "best_epoch": 3,
+      "best_val_f1": 0.8771201107649705,
+      "train_seconds": 531.5754043739871,
+      "total_seconds": 567.0348267090012,
+      "epochs_run": 6
+    }
+  },
+  "test": {
+    "A": {
+      "micro_f1": 0.7945589678866919,
+      "token_accuracy": 0.9758989385442338,
+      "n_tokens": 51533,
+      "report": {
+        "LOC": {
+          "precision": 0.8451,
+          "recall": 0.7703,
+          "f1-score": 0.806,
+          "support": 1084.0
+        },
+        "MISC": {
+          "precision": 0.5045,
+          "recall": 0.4941,
+          "f1-score": 0.4993,
+          "support": 340.0
+        },
+        "ORG": {
+          "precision": 0.7589,
+          "recall": 0.8093,
+          "f1-score": 0.7833,
+          "support": 1400.0
+        },
+        "PER": {
+          "precision": 0.9195,
+          "recall": 0.9483,
+          "f1-score": 0.9337,
+          "support": 735.0
+        },
+        "micro avg": {
+          "precision": 0.7931,
+          "recall": 0.796,
+          "f1-score": 0.7946,
+          "support": 3559.0
+        },
+        "macro avg": {
+          "precision": 0.757,
+          "recall": 0.7555,
+          "f1-score": 0.7556,
+          "support": 3559.0
+        },
+        "weighted avg": {
+          "precision": 0.794,
+          "recall": 0.796,
+          "f1-score": 0.7941,
+          "support": 3559.0
+        }
+      }
+    },
+    "B": {
+      "micro_f1": 0.8677928242356555,
+      "token_accuracy": 0.9850775231405119,
+      "n_tokens": 51533,
+      "report": {
+        "LOC": {
+          "precision": 0.8917,
+          "recall": 0.8432,
+          "f1-score": 0.8668,
+          "support": 1084.0
+        },
+        "MISC": {
+          "precision": 0.6224,
+          "recall": 0.7176,
+          "f1-score": 0.6667,
+          "support": 340.0
+        },
+        "ORG": {
+          "precision": 0.8545,
+          "recall": 0.8807,
+          "f1-score": 0.8674,
+          "support": 1400.0
+        },
+        "PER": {
+          "precision": 0.9637,
+          "recall": 0.9755,
+          "f1-score": 0.9696,
+          "support": 735.0
+        },
+        "micro avg": {
+          "precision": 0.8624,
+          "recall": 0.8733,
+          "f1-score": 0.8678,
+          "support": 3559.0
+        },
+        "macro avg": {
+          "precision": 0.8331,
+          "recall": 0.8543,
+          "f1-score": 0.8426,
+          "support": 3559.0
+        },
+        "weighted avg": {
+          "precision": 0.8662,
+          "recall": 0.8733,
+          "f1-score": 0.8691,
+          "support": 3559.0
+        }
+      }
+    }
+  },
+  "baseline_accuracy": 0.8801156540469214,
+  "search_minutes": {
+    "A": 35.449072293699764,
+    "B": 63.35945422988298
+  },
+  "errors": {
+    "Modelo A": {
+      "Correcta": 2833,
+      "Tipo incorrecto": 264,
+      "Límite incorrecto": 234,
+      "Tipo y límite incorrectos": 67,
+      "Omitida": 161,
+      "Espuria": 78,
+      "I-X inválidos emitidos": 295
+    },
+    "Modelo B": {
+      "Correcta": 3108,
+      "Tipo incorrecto": 244,
+      "Límite incorrecto": 139,
+      "Tipo y límite incorrectos": 36,
+      "Omitida": 32,
+      "Espuria": 39,
+      "I-X inválidos emitidos": 43
+    }
+  }
+}

@@ -1,0 +1,182 @@
+22:27:02 [frozen_lr1e-03_bs16] época 1/20 | pérdida train 0.6979 | pérdida val 0.1845 | F1 val 0.6604 * | 23s
+22:27:30 [frozen_lr1e-03_bs16] época 2/20 | pérdida train 0.1227 | pérdida val 0.1263 | F1 val 0.7459 * | 23s
+22:27:59 [frozen_lr1e-03_bs16] época 3/20 | pérdida train 0.0957 | pérdida val 0.1129 | F1 val 0.7653 * | 23s
+22:28:27 [frozen_lr1e-03_bs16] época 4/20 | pérdida train 0.0874 | pérdida val 0.1112 | F1 val 0.7629 | 23s
+22:28:56 [frozen_lr1e-03_bs16] época 5/20 | pérdida train 0.0831 | pérdida val 0.1076 | F1 val 0.7685 * | 23s
+22:29:24 [frozen_lr1e-03_bs16] época 6/20 | pérdida train 0.0809 | pérdida val 0.1070 | F1 val 0.7696 * | 23s
+22:29:53 [frozen_lr1e-03_bs16] época 7/20 | pérdida train 0.0789 | pérdida val 0.1054 | F1 val 0.7740 * | 23s
+22:30:21 [frozen_lr1e-03_bs16] época 8/20 | pérdida train 0.0772 | pérdida val 0.1052 | F1 val 0.7726 | 23s
+22:30:49 [frozen_lr1e-03_bs16] época 9/20 | pérdida train 0.0764 | pérdida val 0.1065 | F1 val 0.7706 | 23s
+22:31:18 [frozen_lr1e-03_bs16] época 10/20 | pérdida train 0.0755 | pérdida val 0.1084 | F1 val 0.7709 | 23s
+22:31:46 [frozen_lr1e-03_bs16] época 11/20 | pérdida train 0.0752 | pérdida val 0.1033 | F1 val 0.7740 | 23s
+22:31:46 [frozen_lr1e-03_bs16] parada temprana: sin mejora en 4 épocas
+22:32:17 [frozen_lr1e-03_bs32] época 1/20 | pérdida train 0.9043 | pérdida val 0.2321 | F1 val 0.5788 * | 25s
+22:32:47 [frozen_lr1e-03_bs32] época 2/20 | pérdida train 0.1466 | pérdida val 0.1403 | F1 val 0.7298 * | 25s
+22:33:17 [frozen_lr1e-03_bs32] época 3/20 | pérdida train 0.1056 | pérdida val 0.1213 | F1 val 0.7603 * | 25s
+22:33:48 [frozen_lr1e-03_bs32] época 4/20 | pérdida train 0.0941 | pérdida val 0.1159 | F1 val 0.7652 * | 25s
+22:34:18 [frozen_lr1e-03_bs32] época 5/20 | pérdida train 0.0884 | pérdida val 0.1111 | F1 val 0.7730 * | 25s
+22:34:48 [frozen_lr1e-03_bs32] época 6/20 | pérdida train 0.0852 | pérdida val 0.1120 | F1 val 0.7679 | 25s
+22:35:18 [frozen_lr1e-03_bs32] época 7/20 | pérdida train 0.0825 | pérdida val 0.1086 | F1 val 0.7729 | 25s
+22:35:49 [frozen_lr1e-03_bs32] época 8/20 | pérdida train 0.0808 | pérdida val 0.1080 | F1 val 0.7699 | 25s
+22:36:19 [frozen_lr1e-03_bs32] época 9/20 | pérdida train 0.0793 | pérdida val 0.1084 | F1 val 0.7699 | 25s
+22:36:19 [frozen_lr1e-03_bs32] parada temprana: sin mejora en 4 épocas
+22:36:49 [frozen_lr3e-03_bs16] época 1/20 | pérdida train 0.4581 | pérdida val 0.1368 | F1 val 0.7275 * | 23s
+22:37:18 [frozen_lr3e-03_bs16] época 2/20 | pérdida train 0.0983 | pérdida val 0.1156 | F1 val 0.7532 * | 23s
+22:37:46 [frozen_lr3e-03_bs16] época 3/20 | pérdida train 0.0877 | pérdida val 0.1063 | F1 val 0.7680 * | 23s
+22:38:15 [frozen_lr3e-03_bs16] época 4/20 | pérdida train 0.0831 | pérdida val 0.1121 | F1 val 0.7626 | 23s
+22:38:44 [frozen_lr3e-03_bs16] época 5/20 | pérdida train 0.0808 | pérdida val 0.1061 | F1 val 0.7697 * | 23s
+22:39:13 [frozen_lr3e-03_bs16] época 6/20 | pérdida train 0.0802 | pérdida val 0.1055 | F1 val 0.7730 * | 23s
+22:39:42 [frozen_lr3e-03_bs16] época 7/20 | pérdida train 0.0783 | pérdida val 0.1075 | F1 val 0.7703 | 23s
+22:40:10 [frozen_lr3e-03_bs16] época 8/20 | pérdida train 0.0772 | pérdida val 0.1047 | F1 val 0.7738 * | 23s
+22:40:39 [frozen_lr3e-03_bs16] época 9/20 | pérdida train 0.0768 | pérdida val 0.1100 | F1 val 0.7648 | 23s
+22:41:09 [frozen_lr3e-03_bs16] época 10/20 | pérdida train 0.0758 | pérdida val 0.1121 | F1 val 0.7631 | 24s
+22:44:07 [frozen_lr3e-03_bs16] época 11/20 | pérdida train 0.0755 | pérdida val 0.1044 | F1 val 0.7801 * | 25s
+22:44:36 [frozen_lr3e-03_bs16] época 12/20 | pérdida train 0.0744 | pérdida val 0.1082 | F1 val 0.7690 | 24s
+22:45:04 [frozen_lr3e-03_bs16] época 13/20 | pérdida train 0.0740 | pérdida val 0.1088 | F1 val 0.7765 | 23s
+22:45:33 [frozen_lr3e-03_bs16] época 14/20 | pérdida train 0.0729 | pérdida val 0.1048 | F1 val 0.7780 | 23s
+22:46:02 [frozen_lr3e-03_bs16] época 15/20 | pérdida train 0.0723 | pérdida val 0.1065 | F1 val 0.7740 | 24s
+22:46:02 [frozen_lr3e-03_bs16] parada temprana: sin mejora en 4 épocas
+22:46:35 [frozen_lr3e-03_bs32] época 1/20 | pérdida train 0.5919 | pérdida val 0.1539 | F1 val 0.7072 * | 26s
+22:46:54 [frozen_lr1e-03_bs16] recuperada de disco: F1 val 0.7740
+22:46:54 [frozen_lr1e-03_bs32] recuperada de disco: F1 val 0.7730
+22:46:54 [frozen_lr3e-03_bs16] recuperada de disco: F1 val 0.7801
+22:47:26 [frozen_lr3e-03_bs32] época 2/20 | pérdida train 0.1067 | pérdida val 0.1181 | F1 val 0.7578 * | 41s
+22:47:54 [frozen_lr3e-03_bs32] época 1/20 | pérdida train 0.5919 | pérdida val 0.1539 | F1 val 0.7072 * | 49s
+22:48:25 [frozen_lr3e-03_bs32] época 3/20 | pérdida train 0.0896 | pérdida val 0.1078 | F1 val 0.7675 * | 48s
+22:48:53 [frozen_lr3e-03_bs32] época 2/20 | pérdida train 0.1067 | pérdida val 0.1181 | F1 val 0.7578 * | 47s
+22:49:25 [frozen_lr3e-03_bs32] época 3/20 | pérdida train 0.0896 | pérdida val 0.1078 | F1 val 0.7675 * | 27s
+22:49:57 [frozen_lr3e-03_bs32] época 4/20 | pérdida train 0.0833 | pérdida val 0.1087 | F1 val 0.7679 * | 26s
+22:50:29 [frozen_lr3e-03_bs32] época 5/20 | pérdida train 0.0801 | pérdida val 0.1058 | F1 val 0.7683 * | 26s
+22:51:01 [frozen_lr3e-03_bs32] época 6/20 | pérdida train 0.0791 | pérdida val 0.1058 | F1 val 0.7728 * | 26s
+22:51:53 [frozen_lr3e-03_bs32] época 7/20 | pérdida train 0.0773 | pérdida val 0.1055 | F1 val 0.7712 | 43s
+22:52:45 [frozen_lr3e-03_bs32] época 8/20 | pérdida train 0.0764 | pérdida val 0.1039 | F1 val 0.7711 | 43s
+22:53:37 [frozen_lr3e-03_bs32] época 9/20 | pérdida train 0.0752 | pérdida val 0.1074 | F1 val 0.7667 | 42s
+22:54:32 [frozen_lr3e-03_bs32] época 10/20 | pérdida train 0.0749 | pérdida val 0.1109 | F1 val 0.7706 | 45s
+22:54:32 [frozen_lr3e-03_bs32] parada temprana: sin mejora en 4 épocas
+22:55:19 [frozen_lr1e-02_bs16] época 1/20 | pérdida train 0.3002 | pérdida val 0.1415 | F1 val 0.6960 * | 37s
+22:56:08 [frozen_lr1e-02_bs16] época 2/20 | pérdida train 0.1007 | pérdida val 0.1323 | F1 val 0.7491 * | 39s
+22:56:59 [frozen_lr1e-02_bs16] época 3/20 | pérdida train 0.1060 | pérdida val 0.1362 | F1 val 0.7271 | 41s
+22:57:46 [frozen_lr1e-02_bs16] época 4/20 | pérdida train 0.1031 | pérdida val 0.1397 | F1 val 0.7422 | 38s
+22:58:34 [frozen_lr1e-02_bs16] época 5/20 | pérdida train 0.1024 | pérdida val 0.1264 | F1 val 0.7613 * | 39s
+23:01:09 [frozen_lr1e-02_bs16] época 6/20 | pérdida train 0.1013 | pérdida val 0.1288 | F1 val 0.7555 | 38s
+23:02:03 [frozen_lr1e-02_bs16] época 7/20 | pérdida train 0.0979 | pérdida val 0.1270 | F1 val 0.7536 | 45s
+23:02:56 [frozen_lr1e-02_bs16] época 8/20 | pérdida train 0.0965 | pérdida val 0.1210 | F1 val 0.7617 * | 42s
+23:03:43 [frozen_lr1e-02_bs16] época 9/20 | pérdida train 0.0942 | pérdida val 0.1432 | F1 val 0.7366 | 38s
+23:04:31 [frozen_lr1e-02_bs16] época 10/20 | pérdida train 0.0914 | pérdida val 0.1320 | F1 val 0.7477 | 38s
+23:05:06 [frozen_lr1e-02_bs16] época 11/20 | pérdida train 0.0886 | pérdida val 0.1166 | F1 val 0.7654 * | 30s
+23:05:35 [frozen_lr1e-02_bs16] época 12/20 | pérdida train 0.0856 | pérdida val 0.1239 | F1 val 0.7495 | 23s
+23:06:03 [frozen_lr1e-02_bs16] época 13/20 | pérdida train 0.0850 | pérdida val 0.1186 | F1 val 0.7722 * | 23s
+23:06:33 [frozen_lr1e-02_bs16] época 14/20 | pérdida train 0.0818 | pérdida val 0.1128 | F1 val 0.7641 | 24s
+23:07:04 [frozen_lr1e-02_bs16] época 15/20 | pérdida train 0.0797 | pérdida val 0.1180 | F1 val 0.7697 | 25s
+23:07:37 [frozen_lr1e-02_bs16] época 16/20 | pérdida train 0.0777 | pérdida val 0.1080 | F1 val 0.7735 * | 26s
+23:08:09 [frozen_lr1e-02_bs16] época 17/20 | pérdida train 0.0760 | pérdida val 0.1091 | F1 val 0.7734 | 26s
+23:08:40 [frozen_lr1e-02_bs16] época 18/20 | pérdida train 0.0740 | pérdida val 0.1079 | F1 val 0.7771 * | 25s
+23:09:13 [frozen_lr1e-02_bs16] época 19/20 | pérdida train 0.0712 | pérdida val 0.1069 | F1 val 0.7746 | 26s
+23:09:43 [frozen_lr1e-02_bs16] época 20/20 | pérdida train 0.0697 | pérdida val 0.1067 | F1 val 0.7762 | 25s
+23:10:19 [frozen_lr1e-02_bs32] época 1/20 | pérdida train 0.3782 | pérdida val 0.1286 | F1 val 0.7352 * | 29s
+23:10:53 [frozen_lr1e-02_bs32] época 2/20 | pérdida train 0.0971 | pérdida val 0.1328 | F1 val 0.7354 * | 27s
+23:11:26 [frozen_lr1e-02_bs32] época 3/20 | pérdida train 0.0950 | pérdida val 0.1105 | F1 val 0.7645 * | 27s
+23:12:00 [frozen_lr1e-02_bs32] época 4/20 | pérdida train 0.0916 | pérdida val 0.1298 | F1 val 0.7419 | 27s
+23:12:34 [frozen_lr1e-02_bs32] época 5/20 | pérdida train 0.0885 | pérdida val 0.1112 | F1 val 0.7699 * | 28s
+23:13:08 [frozen_lr1e-02_bs32] época 6/20 | pérdida train 0.0906 | pérdida val 0.1161 | F1 val 0.7728 * | 28s
+23:13:42 [frozen_lr1e-02_bs32] época 7/20 | pérdida train 0.0875 | pérdida val 0.1203 | F1 val 0.7537 | 28s
+23:14:15 [frozen_lr1e-02_bs32] época 8/20 | pérdida train 0.0874 | pérdida val 0.1128 | F1 val 0.7665 | 27s
+23:14:48 [frozen_lr1e-02_bs32] época 9/20 | pérdida train 0.0846 | pérdida val 0.1303 | F1 val 0.7469 | 27s
+23:15:21 [frozen_lr1e-02_bs32] época 10/20 | pérdida train 0.0838 | pérdida val 0.1214 | F1 val 0.7573 | 27s
+23:15:21 [frozen_lr1e-02_bs32] parada temprana: sin mejora en 4 épocas
+23:17:01 [full_lr2e-05_bs16] época 1/8 | pérdida train 0.3521 | pérdida val 0.0829 | F1 val 0.8354 * | 93s
+23:22:21 [frozen_lr1e-03_bs16] recuperada de disco: F1 val 0.7740
+23:22:21 [frozen_lr1e-03_bs32] recuperada de disco: F1 val 0.7730
+23:22:21 [frozen_lr3e-03_bs16] recuperada de disco: F1 val 0.7801
+23:22:21 [frozen_lr3e-03_bs32] recuperada de disco: F1 val 0.7728
+23:22:21 [frozen_lr1e-02_bs16] recuperada de disco: F1 val 0.7771
+23:22:21 [frozen_lr1e-02_bs32] recuperada de disco: F1 val 0.7728
+23:23:53 [full_lr2e-05_bs16] época 1/8 | pérdida train 0.3521 | pérdida val 0.0829 | F1 val 0.8351 * | 86s
+23:25:25 [full_lr2e-05_bs16] época 2/8 | pérdida train 0.0464 | pérdida val 0.0752 | F1 val 0.8590 * | 86s
+23:27:02 [full_lr2e-05_bs16] época 3/8 | pérdida train 0.0263 | pérdida val 0.0815 | F1 val 0.8637 * | 91s
+23:28:38 [full_lr2e-05_bs16] época 4/8 | pérdida train 0.0173 | pérdida val 0.0882 | F1 val 0.8671 * | 90s
+23:30:17 [full_lr2e-05_bs16] época 5/8 | pérdida train 0.0114 | pérdida val 0.0974 | F1 val 0.8677 * | 93s
+23:31:52 [full_lr2e-05_bs16] época 6/8 | pérdida train 0.0079 | pérdida val 0.1056 | F1 val 0.8663 | 89s
+23:33:26 [full_lr2e-05_bs16] época 7/8 | pérdida train 0.0058 | pérdida val 0.1153 | F1 val 0.8611 | 88s
+23:35:00 [full_lr2e-05_bs16] época 8/8 | pérdida train 0.0043 | pérdida val 0.1149 | F1 val 0.8605 | 88s
+23:35:00 [full_lr2e-05_bs16] parada temprana: sin mejora en 3 épocas
+23:36:38 [full_lr2e-05_bs32] época 1/8 | pérdida train 0.4674 | pérdida val 0.0982 | F1 val 0.7988 * | 90s
+23:38:16 [full_lr2e-05_bs32] época 2/8 | pérdida train 0.0497 | pérdida val 0.0799 | F1 val 0.8470 * | 93s
+23:39:52 [full_lr2e-05_bs32] época 3/8 | pérdida train 0.0304 | pérdida val 0.0808 | F1 val 0.8652 * | 90s
+23:41:30 [full_lr2e-05_bs32] época 4/8 | pérdida train 0.0206 | pérdida val 0.0823 | F1 val 0.8665 * | 92s
+23:43:06 [full_lr2e-05_bs32] época 5/8 | pérdida train 0.0150 | pérdida val 0.0899 | F1 val 0.8700 * | 90s
+23:44:41 [full_lr2e-05_bs32] época 6/8 | pérdida train 0.0112 | pérdida val 0.0944 | F1 val 0.8630 | 89s
+23:46:18 [full_lr2e-05_bs32] época 7/8 | pérdida train 0.0089 | pérdida val 0.1013 | F1 val 0.8614 | 92s
+23:47:55 [full_lr2e-05_bs32] época 8/8 | pérdida train 0.0072 | pérdida val 0.1016 | F1 val 0.8633 | 91s
+23:47:55 [full_lr2e-05_bs32] parada temprana: sin mejora en 3 épocas
+23:49:29 [full_lr3e-05_bs16] época 1/8 | pérdida train 0.3044 | pérdida val 0.0830 | F1 val 0.8309 * | 86s
+23:51:01 [full_lr3e-05_bs16] época 2/8 | pérdida train 0.0434 | pérdida val 0.0764 | F1 val 0.8606 * | 87s
+23:52:34 [full_lr3e-05_bs16] época 3/8 | pérdida train 0.0241 | pérdida val 0.0855 | F1 val 0.8573 | 87s
+23:54:08 [full_lr3e-05_bs16] época 4/8 | pérdida train 0.0147 | pérdida val 0.0920 | F1 val 0.8633 * | 88s
+23:55:42 [full_lr3e-05_bs16] época 5/8 | pérdida train 0.0096 | pérdida val 0.1028 | F1 val 0.8622 | 88s
+23:57:15 [full_lr3e-05_bs16] época 6/8 | pérdida train 0.0063 | pérdida val 0.1099 | F1 val 0.8603 | 87s
+23:58:47 [full_lr3e-05_bs16] época 7/8 | pérdida train 0.0044 | pérdida val 0.1195 | F1 val 0.8560 | 87s
+23:58:47 [full_lr3e-05_bs16] parada temprana: sin mejora en 3 épocas
+00:00:23 [full_lr3e-05_bs32] época 1/8 | pérdida train 0.3986 | pérdida val 0.0907 | F1 val 0.8102 * | 89s
+00:01:58 [full_lr3e-05_bs32] época 2/8 | pérdida train 0.0462 | pérdida val 0.0856 | F1 val 0.8372 * | 89s
+00:03:32 [full_lr3e-05_bs32] época 3/8 | pérdida train 0.0265 | pérdida val 0.0776 | F1 val 0.8771 * | 88s
+00:05:08 [full_lr3e-05_bs32] época 4/8 | pérdida train 0.0168 | pérdida val 0.0849 | F1 val 0.8709 | 89s
+00:06:42 [full_lr3e-05_bs32] época 5/8 | pérdida train 0.0115 | pérdida val 0.0947 | F1 val 0.8705 | 89s
+00:08:16 [full_lr3e-05_bs32] época 6/8 | pérdida train 0.0082 | pérdida val 0.1025 | F1 val 0.8579 | 88s
+00:08:16 [full_lr3e-05_bs32] parada temprana: sin mejora en 3 épocas
+00:09:48 [full_lr5e-05_bs16] época 1/8 | pérdida train 0.2566 | pérdida val 0.0942 | F1 val 0.7961 * | 86s
+00:11:19 [full_lr5e-05_bs16] época 2/8 | pérdida train 0.0437 | pérdida val 0.0839 | F1 val 0.8472 * | 85s
+00:12:50 [full_lr5e-05_bs16] época 3/8 | pérdida train 0.0244 | pérdida val 0.0878 | F1 val 0.8509 * | 86s
+00:14:23 [full_lr5e-05_bs16] época 4/8 | pérdida train 0.0142 | pérdida val 0.0881 | F1 val 0.8681 * | 87s
+00:15:57 [full_lr5e-05_bs16] época 5/8 | pérdida train 0.0094 | pérdida val 0.1012 | F1 val 0.8605 | 89s
+00:17:32 [full_lr5e-05_bs16] época 6/8 | pérdida train 0.0054 | pérdida val 0.1094 | F1 val 0.8540 | 89s
+00:19:07 [full_lr5e-05_bs16] época 7/8 | pérdida train 0.0037 | pérdida val 0.1208 | F1 val 0.8589 | 89s
+00:19:07 [full_lr5e-05_bs16] parada temprana: sin mejora en 3 épocas
+00:20:45 [full_lr5e-05_bs32] época 1/8 | pérdida train 0.3310 | pérdida val 0.0868 | F1 val 0.8168 * | 91s
+00:22:19 [full_lr5e-05_bs32] época 2/8 | pérdida train 0.0428 | pérdida val 0.0805 | F1 val 0.8575 * | 88s
+00:23:52 [full_lr5e-05_bs32] época 3/8 | pérdida train 0.0237 | pérdida val 0.0814 | F1 val 0.8653 * | 87s
+00:25:26 [full_lr5e-05_bs32] época 4/8 | pérdida train 0.0139 | pérdida val 0.0822 | F1 val 0.8743 * | 88s
+00:26:58 [full_lr5e-05_bs32] época 5/8 | pérdida train 0.0088 | pérdida val 0.0979 | F1 val 0.8737 | 87s
+00:28:30 [full_lr5e-05_bs32] época 6/8 | pérdida train 0.0057 | pérdida val 0.1048 | F1 val 0.8656 | 86s
+00:30:02 [full_lr5e-05_bs32] época 7/8 | pérdida train 0.0043 | pérdida val 0.1117 | F1 val 0.8657 | 87s
+00:30:02 [full_lr5e-05_bs32] parada temprana: sin mejora en 3 épocas
+00:30:25 Evaluación final realizada sobre 'prueba'.
+00:33:24 [frozen_lr1e-03_bs16] recuperada de disco: F1 val 0.7740
+00:33:24 [frozen_lr1e-03_bs32] recuperada de disco: F1 val 0.7730
+00:33:24 [frozen_lr3e-03_bs16] recuperada de disco: F1 val 0.7801
+00:33:24 [frozen_lr3e-03_bs32] recuperada de disco: F1 val 0.7728
+00:33:24 [frozen_lr1e-02_bs16] recuperada de disco: F1 val 0.7771
+00:33:24 [frozen_lr1e-02_bs32] recuperada de disco: F1 val 0.7728
+00:33:24 [full_lr2e-05_bs16] recuperada de disco: F1 val 0.8677
+00:33:24 [full_lr2e-05_bs32] recuperada de disco: F1 val 0.8700
+00:33:24 [full_lr3e-05_bs16] recuperada de disco: F1 val 0.8633
+00:33:24 [full_lr3e-05_bs32] recuperada de disco: F1 val 0.8771
+00:33:24 [full_lr5e-05_bs16] recuperada de disco: F1 val 0.8681
+00:33:24 [full_lr5e-05_bs32] recuperada de disco: F1 val 0.8743
+00:33:36 Resultados de prueba recuperados de disco: la prueba no se vuelve a evaluar.
+00:41:50 [frozen_lr1e-03_bs16] recuperada de disco: F1 val 0.7740
+00:41:50 [frozen_lr1e-03_bs32] recuperada de disco: F1 val 0.7730
+00:41:50 [frozen_lr3e-03_bs16] recuperada de disco: F1 val 0.7801
+00:41:50 [frozen_lr3e-03_bs32] recuperada de disco: F1 val 0.7728
+00:41:50 [frozen_lr1e-02_bs16] recuperada de disco: F1 val 0.7771
+00:41:50 [frozen_lr1e-02_bs32] recuperada de disco: F1 val 0.7728
+00:41:50 [full_lr2e-05_bs16] recuperada de disco: F1 val 0.8677
+00:41:50 [full_lr2e-05_bs32] recuperada de disco: F1 val 0.8700
+00:41:50 [full_lr3e-05_bs16] recuperada de disco: F1 val 0.8633
+00:41:50 [full_lr3e-05_bs32] recuperada de disco: F1 val 0.8771
+00:41:50 [full_lr5e-05_bs16] recuperada de disco: F1 val 0.8681
+00:41:50 [full_lr5e-05_bs32] recuperada de disco: F1 val 0.8743
+00:42:01 Resultados de prueba recuperados de disco: la prueba no se vuelve a evaluar.
+00:42:41 [frozen_lr1e-03_bs16] recuperada de disco: F1 val 0.7740
+00:42:41 [frozen_lr1e-03_bs32] recuperada de disco: F1 val 0.7730
+00:42:41 [frozen_lr3e-03_bs16] recuperada de disco: F1 val 0.7801
+00:42:41 [frozen_lr3e-03_bs32] recuperada de disco: F1 val 0.7728
+00:42:41 [frozen_lr1e-02_bs16] recuperada de disco: F1 val 0.7771
+00:42:41 [frozen_lr1e-02_bs32] recuperada de disco: F1 val 0.7728
+00:42:41 [full_lr2e-05_bs16] recuperada de disco: F1 val 0.8677
+00:42:41 [full_lr2e-05_bs32] recuperada de disco: F1 val 0.8700
+00:42:41 [full_lr3e-05_bs16] recuperada de disco: F1 val 0.8633
+00:42:41 [full_lr3e-05_bs32] recuperada de disco: F1 val 0.8771
+00:42:41 [full_lr5e-05_bs16] recuperada de disco: F1 val 0.8681
+00:42:41 [full_lr5e-05_bs32] recuperada de disco: F1 val 0.8743
+00:42:53 Resultados de prueba recuperados de disco: la prueba no se vuelve a evaluar.
